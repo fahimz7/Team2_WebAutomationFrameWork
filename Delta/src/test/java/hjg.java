@@ -1,0 +1,2 @@
+public class hjg {
+}
