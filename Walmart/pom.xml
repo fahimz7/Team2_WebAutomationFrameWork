@@ -40,7 +40,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFiles>target/test-classes/ChaseTestRunner.xml</suiteXmlFiles>
+                        <suiteXmlFiles>target/test-classes/WalmartTestRunner.xml</suiteXmlFiles>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
