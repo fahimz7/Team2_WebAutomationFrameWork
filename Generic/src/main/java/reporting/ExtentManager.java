@@ -27,5 +27,4 @@ public class ExtentManager {
         ExtentManager.context = context;
 
     }
-
 }
