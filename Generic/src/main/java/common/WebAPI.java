@@ -18,7 +18,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
-import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
 import java.io.File;
