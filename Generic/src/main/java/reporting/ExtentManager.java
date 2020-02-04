@@ -18,10 +18,8 @@ public class ExtentManager {
             Reporter.log("Extent Report Directory"+ resultDirectory, true);
             extent.addSystemInfo("Host Name", "PNT").addSystemInfo("Environment","QA")
 
-                    .addSystemInfo("User Name", "Fahim Zaman");
-
-                  
-            extent.loadConfig(new File(System.getProperty("user.dir")+ "/report-config.xml"));
+                    .addSystemInfo("User Name", "Team 2");
+extent.loadConfig(new File(System.getProperty("user.dir")+ "/report-config.xml"));
         }
         return extent;
     }
