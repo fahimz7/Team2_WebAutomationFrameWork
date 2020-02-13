@@ -62,13 +62,25 @@ public class HomePage extends WebElementHomePage {
     @FindBy(how = How.XPATH, using = WebElementHomePage.skyMiles)
     public static WebElement hoverSkyMiles;
 
+    @FindBy(how = How.XPATH, using = WebElementHomePage.knowSkyMiles)
+    public static WebElement clickKnowSkyMiles;
+
+    @FindBy(how = How.XPATH, using = WebElementHomePage.skyMilesOptions)
+    public static WebElement clickSkyMilesOptions;
+
     public static WebElement getHoverSkyMiles(){
         return hoverSkyMiles;
     }
-    public static void doHoverSkyMiles(){
+    public static WebElement getClickKnowSkyMiles(){return clickKnowSkyMiles;}
+    public static WebElement getClickSkyMilesOptions(){return clickSkyMilesOptions;}
+
+    public static void doHoverSkyMiles() throws InterruptedException {
         Actions actions=new Actions(driver);
         WebElement target=driver.findElement(By.xpath(skyMiles));
         actions.moveToElement(target).perform();
+        getClickKnowSkyMiles().click();
+        Thread.sleep(2000);
+        getClickSkyMilesOptions().click();
     }
 
 }

@@ -16,4 +16,6 @@ public class WebElementHomePage extends WebAPI {
 
     //Delta hover skymiles
     public static final String skyMiles="//*[@id=\"headSectab2\"]";
+    public static final String knowSkyMiles="//a[@id='secondary-static-link-0']";
+    public static final String skyMilesOptions="//*[@id=\"accordion1\"]/div/div[1]/div/a";
 }
