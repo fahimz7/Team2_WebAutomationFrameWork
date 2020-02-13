@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 
 import java.io.File;
@@ -121,7 +122,7 @@ public class WebAPI {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     public WebDriver getLocalDriver(   @Optional("mac")    String OS, String browserName) {
