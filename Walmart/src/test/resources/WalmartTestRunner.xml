@@ -15,7 +15,10 @@
     <parameter name="url" value="https://www.walmart.com"/>
     <test name="Walmart Home">
         <classes>
-            <class name="testhome.TestHomePage"/>
+           <class name="testhome.TestHomePage"/>
+            <class name="testhome.TestHamburgerPage"/>
+
+
 
         </classes>
 
