@@ -3,6 +3,7 @@ package testhome;
 import common.WebAPI;
 import home.pageobject.AboutPage;
 import home.pageobject.HomePage;
+import io.cucumber.java.sl.In;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -28,6 +29,18 @@ public class TestHomePage extends HomePage{
         doClickSearchButtonAndWrite();
         Thread.sleep(3000);
 
+        }
+        @Test(priority = 3)
+        public void testFlightSearch() throws InterruptedException{
+        getInItElements();
+        doClickFlightStatus();
+        Thread.sleep(3000);
+        }
+        @Test(priority = 4)
+        public void testHoverSkyMiles() throws InterruptedException{
+        getInItElements();
+        doHoverSkyMiles();
+        Thread.sleep(3000);
         }
 
 }

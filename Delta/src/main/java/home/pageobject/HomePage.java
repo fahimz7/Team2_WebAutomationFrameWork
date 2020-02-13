@@ -49,6 +49,27 @@ public class HomePage extends WebElementHomePage {
         Thread.sleep(3000);
         //driver.findElement(By.xpath(webElementSearchBoxButton)).click();
     }
+    @FindBy(how = How.XPATH, using = WebElementHomePage.flightStatus)
+    public static WebElement clickFlightStatus;
+
+    public static WebElement getClickFlightStatus(){
+        return clickFlightStatus;
+    }
+    public static void doClickFlightStatus() throws InterruptedException{
+       //driver.findElement(By.xpath(flightStatus)).click();
+        getClickFlightStatus().click();
+    }
+    @FindBy(how = How.XPATH, using = WebElementHomePage.skyMiles)
+    public static WebElement hoverSkyMiles;
+
+    public static WebElement getHoverSkyMiles(){
+        return hoverSkyMiles;
+    }
+    public static void doHoverSkyMiles(){
+        Actions actions=new Actions(driver);
+        WebElement target=driver.findElement(By.xpath(skyMiles));
+        actions.moveToElement(target).perform();
+    }
 
 }
 
