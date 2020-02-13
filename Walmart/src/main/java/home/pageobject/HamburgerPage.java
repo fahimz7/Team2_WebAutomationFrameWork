@@ -32,6 +32,7 @@ public class HamburgerPage extends WebElementHamburgerPage  {
         Actions actions=new Actions(driver);
         actions.moveToElement(getSavingsSpotLight()).perform();
         driver.findElement(By.xpath(webElementHomeImprovement)).click();
+
     }
 
 
