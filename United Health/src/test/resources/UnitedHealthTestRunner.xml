@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Hartford Automation Script" parallel="false">
+<suite name="United Health Care Automation Script" parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="cloudEnvName" value="browserstack"/>
@@ -12,10 +12,11 @@
     <parameter name="os_version" value="Sierra"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="79"/>
-    <parameter name="url" value="https://www.thehartford.com/"/>
-    <test name="Hartford Home">
+    <parameter name="url" value="https://www.uhc.com/"/>
+    <test name="Test">
         <classes>
-            <class name="testhome.TestHomePage"/>
+
+            <class name="TestHome.TestHomePage"/>
 
         </classes>
 
