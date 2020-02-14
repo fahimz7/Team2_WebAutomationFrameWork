@@ -99,8 +99,8 @@ public class    WebAPI {
     }
     //Browser SetUp
     public static WebDriver driver = null;
-    public String browserstack_username = "mhshahib1";
-    public String browserstack_accesskey = "YA4xsqrMqFurrGduX1X9";
+    public String browserstack_username = "SanuwarRashid";
+    public String browserstack_accesskey = "";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
 
@@ -122,13 +122,13 @@ public class    WebAPI {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
         driver.get(url);
-        //driver.manage().window().maximize();
+        driver.manage().window().maximize();
     }
 
     public WebDriver getLocalDriver(   @Optional("mac")    String OS, String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "/Users/sanuwar/Team2_WebAutomationFrameWork/Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
             }
@@ -420,6 +420,7 @@ public class    WebAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             Actions hover = action.moveToElement(element);
+            hover.perform();
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -430,11 +431,12 @@ public class    WebAPI {
 
     }
 
-    public void mouseHoverByXpath(String locator) {
+    public static void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
             Actions hover = action.moveToElement(element);
+            hover.perform();
         } catch (Exception ex) {
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.xpath(locator));
