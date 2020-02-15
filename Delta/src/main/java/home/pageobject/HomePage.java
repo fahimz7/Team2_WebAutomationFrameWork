@@ -68,11 +68,19 @@ public class HomePage extends WebElementHomePage {
     @FindBy(how = How.XPATH, using = WebElementHomePage.skyMilesOptions)
     public static WebElement clickSkyMilesOptions;
 
+    @FindBy(how = How.XPATH, using = WebElementHomePage.howToEarnMiles)
+    public static WebElement clickHowToEarnMiles;
+
+    @FindBy(how = How.XPATH, using = WebElementHomePage.airlinePartners)
+    public static WebElement clickAirlinePartners;
+
     public static WebElement getHoverSkyMiles(){
         return hoverSkyMiles;
     }
     public static WebElement getClickKnowSkyMiles(){return clickKnowSkyMiles;}
     public static WebElement getClickSkyMilesOptions(){return clickSkyMilesOptions;}
+    public static WebElement getClickHowToEarnMiles(){return clickHowToEarnMiles;}
+    public static WebElement getClickAirlinePartners(){return clickAirlinePartners;}
 
     public static void doHoverSkyMiles() throws InterruptedException {
         Actions actions=new Actions(driver);
@@ -81,6 +89,23 @@ public class HomePage extends WebElementHomePage {
         getClickKnowSkyMiles().click();
         Thread.sleep(2000);
         getClickSkyMilesOptions().click();
+        Thread.sleep(2000);
+        getClickHowToEarnMiles().click();
+        Thread.sleep(2000);
+        getClickAirlinePartners().click();
+    }
+    @FindBy(how = How.XPATH, using = WebElementHomePage.deltaSearchButton)
+    public static WebElement clickDeltaSearchButton;
+
+    @FindBy(how = How.XPATH, using = WebElementHomePage.deltaSearchBox)
+    public static WebElement typeDeltaSearchBox;
+
+    public static WebElement getClickDeltaSearchButton(){return clickDeltaSearchButton;}
+    public static WebElement getTypeDeltaSearchBox(){return typeDeltaSearchBox;}
+
+    public static void doSearchCreditCards() throws InterruptedException{
+        getClickDeltaSearchButton().click();
+        getTypeDeltaSearchBox().sendKeys("credit card", Keys.ENTER);
     }
 
 }
