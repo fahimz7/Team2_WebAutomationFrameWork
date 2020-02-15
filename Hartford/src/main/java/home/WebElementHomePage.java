@@ -135,4 +135,68 @@ public class WebElementHomePage extends WebAPI {
     public static final String xPathQuoteBoxAutoBox = "//li[@class='active']";
     public static final String xPathQuoteBoxZipCodeSearchBox = "//div[@id='cqb-1444641621794']//input[@placeholder='Zip Code']";
     public static final String xPathQuoteBoxSearchButton = "//div[@id='cqb-1444641621794']//button[@class='btn btn-primary btn-block'][contains(text(),'Start Quote')]";
+    public static final String xPathQuoteBoxHomeAndCondo = "//div[@class='wrapper-icon']//i[@class='icon icon-house']";
+    public static final String xPathQuoteBoxZipCodeSearchBoxHomeAndCondo = "/html[1]/body[1]/div[3]/section[1]/div[1]/div[2]/div[1]/div[2]/article[1]/div[1]/div[1]/div[1]/div[2]/div[2]/article[1]/form[1]/div[2]/input[1]";
+    public static final String xPathQuoteBoxSearchButtonHomeAndCondo = "/html[1]/body[1]/div[3]/section[1]/div[1]/div[2]/div[1]/div[2]/article[1]/div[1]/div[1]/div[1]/div[2]/div[2]/article[1]/form[1]/button[1]";
+    public static final String xPathQuoteBoxBusiness = "/html[1]/body[1]/div[3]/section[1]/div[1]/div[2]/div[1]/div[2]/article[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]";
+    public static final String xPathQuoteBoxQuoteTodayButton = "//span[contains(text(),'Quote Today')]";
+
+    public static final String xPathCarInsuranceRatingStars = "//div[@id='pr-1444643148108']//div[@class='hig-aggregate-stars']";
+    public static final String xPathCarInsuranceRatingNumbers = "/html[1]/body[1]/div[3]/main[1]/div[3]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[1]/div[1]/div[2]/div[1]";
+    public static final String xPathCarInsuranceRatingReviews = "/html[1]/body[1]/div[3]/main[1]/div[3]/div[1]/section[1]/div[1]/div[1]/article[1]/div[2]/div[1]/div[1]/div[2]/div[2]/a[1]";
+
+
+    public static final String xPathAutoTabAllVehiclesCarInsurance= "/html[1]/body[1]/main[1]/div[2]/section[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/a[1]";
+    public static final String xPathAutoTabAllVehiclesClassicCarInsurance= "//span[@class='icon-arrow-right']//a[contains(text(),'Classic Car Insurance')]";
+    public static final String xPathAutoTabAllVehiclesRVInsurance= "//a[contains(text(),'RV Insurance')]";
+    public static final String xPathAutoTabAllVehiclesATVInsurance= "//div[4]//article[1]//div[1]//div[1]//div[2]//div[1]//div[1]//span[1]";
+    public static final String xPathAutoTabAllVehiclesBoatInsurance= "//a[contains(text(),'Boat Insurance')]";
+    public static final String xPathAutoTabAllVehiclesGolfCartInsurance= "//a[contains(text(),'Golf Cart Insurance')]";
+    public static final String xPathAutoTabAllVehiclesSnowMobileInsurance= "//a[contains(text(),'Snowmobile Insurance')]";
+
+    public static final String xPathAutoTabAllVehiclesCarInsuranceLogo= "//div[2]//section[1]//div[1]//div[1]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+    public static final String xPathAutoTabAllVehiclesClassicCarInsuranceLogo= "//div[2]//section[1]//div[1]//div[2]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+    public static final String xPathAutoTabAllVehiclesRVInsuranceLogo= "//div[2]//section[1]//div[1]//div[3]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+    public static final String xPathAutoTabAllVehiclesATVInsuranceLogo= "//div[4]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+    public static final String xPathAutoTabAllVehiclesBoatInsuranceLogo= "//div[3]//section[1]//div[1]//div[1]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+    public static final String xPathAutoTabAllVehiclesGolfCartInsuranceLogo= "//div[3]//section[1]//div[1]//div[2]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+    public static final String xPathAutoTabAllVehiclesSnowMobileInsuranceLogo= "//div[3]//section[1]//div[1]//div[2]//article[1]//div[1]//div[1]//div[1]//a[1]//img[1]";
+
+
+
+    public static final String xPathFooterAuto = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]";
+
+    public static final String xPathFooterHome = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]";
+
+    public static final String xPathFooterBusiness = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]";
+
+    public static final String xPathFooterEmployeeBenefits = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]";
+
+    public static final String xPathFooterMutualFunds = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]/a[1]";
+
+    public static final String xPathFooterAboutUs = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]";
+
+    public static final String xPathFooterCareer = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]";
+
+    public static final String xPathFooterAgentsAndProducers = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[3]/a[1]";
+
+    public static final String xPathFooterNewsRoom = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[4]/a[1]";
+
+    public static final String xPathFooterInvestorRelations = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[5]/a[1]";
+
+    public static final String xPathFooterContactUs = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[1]/a[1]";
+
+    public static final String xPathFooterReportAClaim = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[2]/a[1]";
+
+    public static final String xPathFooterFindAnAgent = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[3]/a[1]";
+
+    public static final String xPathFooterMobileApp = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[4]/a[1]";
+
+    public static final String xPathFooterSmallBizAhead = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[4]/a[1]";
+
+    public static final String xPathFooterSmallBusinessPlayBook = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[6]/a[1]";
+
+    public static final String xPathFooterExtraMile = "/html[1]/body[1]/footer[1]/div[1]/div[1]/div[1]/div[3]/ul[1]/li[7]/a[1]";
+
+
 }

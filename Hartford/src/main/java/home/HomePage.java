@@ -47,6 +47,41 @@ public class HomePage extends WebElementHomePage {
         return quoteBoxSearchButton;
     }
 
+    @FindBy(how = How.XPATH, using = xPathQuoteBoxHomeAndCondo)
+    public static WebElement quoteBoxHomeAndCondo;
+
+    public static WebElement getQuoteBoxHomeAndCondo(){
+        return quoteBoxHomeAndCondo;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathQuoteBoxZipCodeSearchBoxHomeAndCondo)
+    public static WebElement quoteBoxZipCodeSearchBoxHomeAndCondo;
+
+    public static WebElement getQuoteBoxZipCodeSearchBoxHomeAndCondo(){
+        return quoteBoxZipCodeSearchBoxHomeAndCondo;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathQuoteBoxSearchButtonHomeAndCondo)
+    public static WebElement quoteBoxSearchButtonHomeAndCondo;
+
+    public static WebElement getQuoteBoxSearchButtonHomeAndCondo(){
+        return quoteBoxSearchButtonHomeAndCondo;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathQuoteBoxBusiness)
+    public static WebElement quoteBoxBusiness;
+
+    public static WebElement getQuoteBoxBusiness(){
+        return quoteBoxBusiness;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathQuoteBoxQuoteTodayButton)
+    public static WebElement quoteBoxQuoteTodayButton;
+
+    public static WebElement getQuoteBoxQuoteTodayButton(){
+        return quoteBoxQuoteTodayButton;
+    }
+
 
 
 
@@ -117,6 +152,128 @@ public class HomePage extends WebElementHomePage {
     public static WebElement getSelectAllVehical(){
         return SelectAllVehical;
     }
+
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesCarInsurance)
+    public static WebElement autoTabAllVehiclesCarInsurance;
+
+    public static WebElement getAutoTabAllVehiclesCarInsurance(){
+        return autoTabAllVehiclesCarInsurance;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesClassicCarInsurance)
+    public static WebElement autoTabAllVehiclesClassicCarInsurance;
+
+    public static WebElement getAutoTabAllVehiclesClassicCarInsurance(){
+        return autoTabAllVehiclesClassicCarInsurance;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesRVInsurance)
+    public static WebElement autoTabAllVehiclesRVInsurance;
+
+    public static WebElement getAutoTabAllVehiclesRVInsurance(){
+        return autoTabAllVehiclesRVInsurance;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesATVInsurance)
+    public static WebElement autoTabAllVehiclesATVInsurance;
+
+    public static WebElement getAutoTabAllVehiclesATVInsurance(){
+        return autoTabAllVehiclesATVInsurance;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesBoatInsurance)
+    public static WebElement autoTabAllVehiclesBoatInsurance;
+
+    public static WebElement getAutoTabAllVehiclesBoatInsurance(){
+        return autoTabAllVehiclesBoatInsurance;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesGolfCartInsurance)
+    public static WebElement autoTabAllVehiclesGolfCartInsurance;
+
+    public static WebElement getAutoTabAllVehiclesGolfCartInsurance(){
+        return autoTabAllVehiclesGolfCartInsurance;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesSnowMobileInsurance)
+    public static WebElement autoTabAllVehiclesSnowMobileInsurance;
+
+    public static WebElement getAutoTabAllVehiclesSnowMobileInsurance(){
+        return autoTabAllVehiclesSnowMobileInsurance;
+    }
+
+
+
+
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesCarInsuranceLogo)
+    public static WebElement autoTabAllVehiclesCarInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesCarInsuranceLogo(){
+        return autoTabAllVehiclesCarInsuranceLogo;
+    }
+
+
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesClassicCarInsuranceLogo)
+    public static WebElement autoTabAllVehiclesClassicCarInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesClassicCarInsuranceLogo(){
+        return autoTabAllVehiclesClassicCarInsuranceLogo;
+    }
+
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesRVInsuranceLogo)
+    public static WebElement autoTabAllVehiclesRVInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesRVInsuranceLogo(){
+        return autoTabAllVehiclesRVInsuranceLogo;
+    }
+
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesATVInsuranceLogo)
+    public static WebElement autoTabAllVehiclesATVInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesATVInsuranceLogo(){
+        return autoTabAllVehiclesATVInsuranceLogo;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesBoatInsuranceLogo)
+    public static WebElement autoTabAllVehiclesBoatInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesBoatInsuranceLogo(){
+        return autoTabAllVehiclesBoatInsuranceLogo;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesGolfCartInsuranceLogo)
+    public static WebElement autoTabAllVehiclesGolfCartInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesGolfCartInsuranceLogo(){
+        return autoTabAllVehiclesGolfCartInsuranceLogo;
+    }
+
+
+    @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesSnowMobileInsuranceLogo)
+    public static WebElement autoTabAllVehiclesSnowMobileInsuranceLogo;
+
+    public static WebElement getAutoTabAllVehiclesSnowMobileInsuranceLogo(){
+        return autoTabAllVehiclesSnowMobileInsuranceLogo;
+    }
+
+
 
 //    @FindBy(how= How.XPATH,using = xPathMouseHoverAutoTab) public static WebElement mouseHoverAutoTab;
 //
@@ -394,6 +551,27 @@ public class HomePage extends WebElementHomePage {
         return bottomLogoEmployeeBenefits;
     }
 
+    @FindBy(how = How.XPATH, using = xPathCarInsuranceRatingStars)
+    public static WebElement carInsuranceRatingStars;
+
+    public static WebElement getCarInsuranceRatingStars(){
+        return carInsuranceRatingStars;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathCarInsuranceRatingNumbers)
+    public static WebElement carInsuranceRatingNumbers;
+
+    public static WebElement getCarInsuranceRatingNumbers(){
+        return carInsuranceRatingNumbers;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathCarInsuranceRatingReviews)
+    public static WebElement carInsuranceRatingReviews;
+
+    public static WebElement getCarInsuranceRatingReviews(){
+        return carInsuranceRatingReviews;
+    }
+
     @FindBy(how = How.XPATH, using = xPathTopBarClaimsTab)
     public static WebElement topBarClaimsTab;
 
@@ -603,6 +781,128 @@ public class HomePage extends WebElementHomePage {
 
     public static WebElement getContactUsTabMainContactInformation(){
         return contactUsTabMainContactInformation;
+    }
+
+
+
+
+    @FindBy(how = How.XPATH, using = xPathFooterAuto)
+    public static WebElement footerAuto;
+
+    public static WebElement getFooterAuto(){
+        return footerAuto;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterHome)
+    public static WebElement footerHome;
+
+    public static WebElement getFooterHome(){
+        return footerHome;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterBusiness)
+    public static WebElement footerBusiness;
+
+    public static WebElement getFooterBusiness(){
+        return footerBusiness;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterEmployeeBenefits)
+    public static WebElement footerEmployeeBenefits;
+
+    public static WebElement getFooterEmployeeBenefits(){
+        return footerEmployeeBenefits;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterMutualFunds)
+    public static WebElement footerMutualFunds;
+
+    public static WebElement getFooterMutualFunds(){
+        return footerMutualFunds;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterAboutUs)
+    public static WebElement footerAboutUs;
+
+    public static WebElement getFooterAboutUs(){
+        return footerAboutUs;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterCareer)
+    public static WebElement footerCareer;
+
+    public static WebElement getFooterCareer(){
+        return footerCareer;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterAgentsAndProducers)
+    public static WebElement footerAgentsAndProducers;
+
+    public static WebElement getFooterAgentsAndProducers(){
+        return footerAgentsAndProducers;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterNewsRoom)
+    public static WebElement footerNewsRoom;
+
+    public static WebElement getFooterNewsRoom(){
+        return footerNewsRoom;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterInvestorRelations)
+    public static WebElement footerInvestorRelations;
+
+    public static WebElement getFooterInvestorRelations(){
+        return footerInvestorRelations;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterContactUs)
+    public static WebElement footerContactUs;
+
+    public static WebElement getFooterContactUs(){
+        return footerContactUs;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterReportAClaim)
+    public static WebElement footerReportAClaim;
+
+    public static WebElement getFooterReportAClaim(){
+        return footerReportAClaim;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterFindAnAgent)
+    public static WebElement footerFindAnAgent;
+
+    public static WebElement getFooterFindAnAgent(){
+        return footerFindAnAgent;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterMobileApp)
+    public static WebElement footerMobileApp;
+
+    public static WebElement getFooterMobileApp(){
+        return footerMobileApp;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterSmallBizAhead)
+    public static WebElement footerSmallBizAhead;
+
+    public static WebElement getFooterSmallBizAhead(){
+        return footerSmallBizAhead;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterSmallBusinessPlayBook)
+    public static WebElement footerSmallBusinessPlayBook;
+
+    public static WebElement getFooterSmallBusinessPlayBook(){
+        return footerSmallBusinessPlayBook;
+    }
+
+    @FindBy(how = How.XPATH, using = xPathFooterExtraMile)
+    public static WebElement footerExtraMile;
+
+    public static WebElement getFooterExtraMile(){
+        return footerExtraMile;
     }
 }
 
