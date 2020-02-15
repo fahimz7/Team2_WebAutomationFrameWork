@@ -100,12 +100,40 @@ public class HomePage extends WebElementHomePage {
     @FindBy(how = How.XPATH, using = WebElementHomePage.deltaSearchBox)
     public static WebElement typeDeltaSearchBox;
 
+    @FindBy(how = How.XPATH, using = WebElementHomePage.skyMilesCreditCard)
+    public static WebElement clickSkyMilesCreditCard;
+
+    @FindBy(how= How.XPATH, using =WebElementHomePage.getToKnowSkyMiles)
+    public static WebElement clickGetToKnowSkyMiles;
+
+    @FindBy(how = How.XPATH, using = WebElementHomePage.deltaSkyMilesAmex)
+    public static WebElement clickDeltaSkySmilesAmex;
+
+    @FindBy(how = How.XPATH, using = WebElementHomePage.personalCards)
+    public static WebElement clickPersonalCards;
+
     public static WebElement getClickDeltaSearchButton(){return clickDeltaSearchButton;}
     public static WebElement getTypeDeltaSearchBox(){return typeDeltaSearchBox;}
+    public static WebElement getClickSkyMilesCreditCard(){return clickSkyMilesCreditCard;}
+    public static WebElement getClickGetToKnowSkyMiles(){return clickGetToKnowSkyMiles;}
+    public static WebElement getClickDeltaSkySmilesAmex(){return  clickDeltaSkySmilesAmex;}
+    public static WebElement getClickPersonalCards(){return  clickPersonalCards;}
 
     public static void doSearchCreditCards() throws InterruptedException{
         getClickDeltaSearchButton().click();
         getTypeDeltaSearchBox().sendKeys("credit card", Keys.ENTER);
+        driver.navigate().back();
+        Actions actions=new Actions(driver);
+        WebElement target=driver.findElement(By.xpath(skyMiles));
+        actions.moveToElement(target).perform();
+        getClickSkyMilesCreditCard().click();
+        Thread.sleep(2000);
+        getClickGetToKnowSkyMiles().click();
+        Thread.sleep(2000);
+        getClickDeltaSkySmilesAmex().click();
+        Thread.sleep(3000);
+        getClickPersonalCards().click();
+
     }
 
 }

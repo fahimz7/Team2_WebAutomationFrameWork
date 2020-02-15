@@ -42,11 +42,11 @@ public class TestHomePage extends HomePage{
         doHoverSkyMiles();
         Thread.sleep(3000);
         }
-        @Test(priority = 5)
+        @Test(priority = 1)
         public void testSearchCreditCards() throws InterruptedException{
         getInItElements();
         doSearchCreditCards();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         }
 
 }

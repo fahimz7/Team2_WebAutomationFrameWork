@@ -25,4 +25,8 @@ public class WebElementHomePage extends WebAPI {
 
     public static final String deltaSearchButton="//ngc-search[@class='d-none d-lg-block ng-tns-c0-0 ng-star-inserted']//a[@class='search icon-search-icon circle-outline']";
     public static final String deltaSearchBox="//input[@id='search_input']";
+    public static final String skyMilesCreditCard="//*[@id=\"secondary-static-link-5\"]";
+    public static final String getToKnowSkyMiles="//*[@id=\"accordion1\"]/div/div[1]/div/a";
+    public static final String deltaSkyMilesAmex="//*[@id=\"accordion2\"]/li[5]/div[1]/div/a";
+    public static final String personalCards="//*[@id=\"collapseInner4\"]/div/ul/li[2]/a";
 }
