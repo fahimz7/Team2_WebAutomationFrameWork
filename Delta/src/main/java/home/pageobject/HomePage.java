@@ -112,12 +112,20 @@ public class HomePage extends WebElementHomePage {
     @FindBy(how = How.XPATH, using = WebElementHomePage.personalCards)
     public static WebElement clickPersonalCards;
 
+    @FindBy(how = How.XPATH, using = WebElementHomePage.blueAmexCard)
+    public static WebElement clickBlueAmexCard;
+
+    @FindBy(how = How.XPATH,using = WebElementHomePage.blueAmexRatesAndFees)
+    public static WebElement clickBlueAmexRateAndFees;
+
     public static WebElement getClickDeltaSearchButton(){return clickDeltaSearchButton;}
     public static WebElement getTypeDeltaSearchBox(){return typeDeltaSearchBox;}
     public static WebElement getClickSkyMilesCreditCard(){return clickSkyMilesCreditCard;}
     public static WebElement getClickGetToKnowSkyMiles(){return clickGetToKnowSkyMiles;}
     public static WebElement getClickDeltaSkySmilesAmex(){return  clickDeltaSkySmilesAmex;}
     public static WebElement getClickPersonalCards(){return  clickPersonalCards;}
+    public static WebElement getClickBlueAmexCard(){return clickBlueAmexCard;}
+    public static WebElement getClickBlueAmexRateAndFees(){return clickBlueAmexRateAndFees;}
 
     public static void doSearchCreditCards() throws InterruptedException{
         getClickDeltaSearchButton().click();
@@ -133,6 +141,11 @@ public class HomePage extends WebElementHomePage {
         getClickDeltaSkySmilesAmex().click();
         Thread.sleep(3000);
         getClickPersonalCards().click();
+        Thread.sleep(3000);
+        getClickBlueAmexCard().click();
+        Thread.sleep(3000);
+        getClickBlueAmexRateAndFees().click();
+        Thread.sleep(3000);
 
     }
 
