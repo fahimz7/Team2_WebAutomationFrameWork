@@ -18,6 +18,8 @@
         <module>United Health</module>
         <module>Verizon</module>
         <module>Walmart</module>
+        <module>UnitedHealthCare</module>
+        <module>TheHartford</module>
     </modules>
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
