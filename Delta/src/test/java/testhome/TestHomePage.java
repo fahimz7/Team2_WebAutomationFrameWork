@@ -1,7 +1,7 @@
 package testhome;
 
 import common.WebAPI;
-import home.pageobject.AboutPage;
+
 import home.pageobject.HomePage;
 import io.cucumber.java.sl.In;
 import org.openqa.selenium.By;
@@ -13,7 +13,6 @@ public class TestHomePage extends HomePage{
 
 
     public void getInItElements(){PageFactory.initElements(driver,HomePage.class);
-        PageFactory.initElements(driver,AboutPage.class);
 
     }
 //    @Test(priority = 1)
@@ -90,6 +89,18 @@ public class TestHomePage extends HomePage{
         sleepFor(3);
         xPathSendKey(enterEmail,"fzaman@gmail.com");
         xPathSendKey(confirmEmail,"fzaman@gmail.com");
+        sleepFor(3);
+        xPathSendKey(enterUserName,"fahimQA");
+        xPathSendKey(enterPassword,"fahim1234");
+        sleepFor(3);
+        xPathSendKey(confirmPassword,"fahim1234");
+        xPathClick(selectQuestion1Button);
+        xPathClick(selectFirstQuestion);
+        xPathSendKey(enterFirstAnswer,"Aroz");
+        sleepFor(3);
+        xPathClick(selectQuestion2Button);
+        xPathClick(selectSecondQuestion);
+        xPathSendKey(enterSecondAnswer,"Bangladesh");
         sleepFor(3);
         }
 

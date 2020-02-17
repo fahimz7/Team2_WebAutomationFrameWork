@@ -63,5 +63,15 @@ public class WebElementHomePage extends WebAPI {
     public static final String enterPhoneNumber="//*[@id=\"requiredPhoneNumber\"]";
     public static final String enterEmail="//*[@id=\"basicInfoEmailAddress\"]";
     public static final String confirmEmail="//*[@id=\"requiredEmail2\"]";
+    public static final String enterUserName="//*[@id=\"basicInfoUserName\"]";
+    public static final String enterPassword="//*[@id=\"basicInfoPassword\"]";
+    public static final String confirmPassword="//*[@id=\"requiredEqualTo\"]";
+    public static final String selectQuestion1Button="//*[@id=\"basicInfoQuestionId1-button\"]/span[1]";
+    public static final String selectFirstQuestion="/html[1]/body[1]/div[16]/ul[1]/li[3]";
+    public static final String enterFirstAnswer="//*[@id=\"basicInfoAnswer1\"]";
+    public static final String selectQuestion2Button="//*[@id=\"basicInfoQuestionId2-button\"]/span[1]";
+    public static final String selectSecondQuestion="/html[1]/body[1]/div[17]/ul[1]/li[7]";
+    public static final String enterSecondAnswer="//*[@id=\"basicInfoAnswer2\"]";
+
 
 }
