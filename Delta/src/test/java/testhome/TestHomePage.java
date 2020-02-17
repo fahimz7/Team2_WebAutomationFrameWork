@@ -4,6 +4,8 @@ import common.WebAPI;
 import home.pageobject.AboutPage;
 import home.pageobject.HomePage;
 import io.cucumber.java.sl.In;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -42,11 +44,48 @@ public class TestHomePage extends HomePage{
 //        doHoverSkyMiles();
 //        Thread.sleep(3000);
 //        }
+//        @Test(priority = 1)
+//        public void testSearchCreditCards() throws InterruptedException{
+//        getInItElements();
+//        doSearchCreditCards();
+//        Thread.sleep(3000);
+//        }
         @Test(priority = 1)
-        public void testSearchCreditCards() throws InterruptedException{
-        getInItElements();
-        doSearchCreditCards();
+    public void testSignUpPage() throws InterruptedException{
+        xPathClick(signUp);
+        sleepFor(3);
+        xPathClick(signUpFirstName);
+        Thread.sleep(2000);
+        xPathSendKey(signUpFirstName, "Fahim");
+        xPathClick(signUpLastName);
+        xPathSendKey(signUpLastName,"Zaman");
         Thread.sleep(3000);
+        xPathClick(clickGender);
+        xPathClick(clickMale);
+        Thread.sleep(3000);
+        scrollUpDown(200);
+        sleepFor(3);
+        xPathClick(clickMonth);
+        xPathClick(clickMarch);
+        sleepFor(3);
+        xPathClick(clickDayOfBirthButton);
+        xPathClick(clickBirthDay);
+        sleepFor(3);
+        xPathClick(clickYearButton);
+        xPathClick(clickYearDate);
+        sleepFor(2);
+        xPathClick(clickAddressTypeButton);
+        xPathClick(clickAddressType);
+        sleepFor(2);
+        xPathSendKey(enterAddress,"965 TINTON AVE APT 1");
+        xPathSendKey(enterCity,"BRONX");
+        sleepFor(3);
+        xPathClick(clickStateButton);
+        xPathClick(clickState);
+        sleepFor(3);
+        xPathSendKey(enterPostalCode,"10029");
+        sleepFor(2);
+
         }
 
 }

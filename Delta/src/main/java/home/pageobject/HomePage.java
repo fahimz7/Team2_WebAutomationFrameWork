@@ -182,7 +182,6 @@ public class HomePage extends WebElementHomePage {
         getEmploreMore().click();
         Thread.sleep(3000);
         driver.quit();
-
     }
 
 }

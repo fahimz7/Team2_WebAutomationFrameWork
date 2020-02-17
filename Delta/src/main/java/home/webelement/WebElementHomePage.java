@@ -1,6 +1,7 @@
 package home.webelement;
 
 import common.WebAPI;
+import org.seleniumhq.jetty9.server.PushBuilder;
 
 public class WebElementHomePage extends WebAPI {
     //Delta travel hover travel info and click on board experience
@@ -38,4 +39,25 @@ public class WebElementHomePage extends WebAPI {
     //Explore more option from homepage
     public static final String ExploreMore="//*[@id=\"homepage:banner-promoquilt\"]/div/div[4]/div/div/div/div/div/div/a";
     public static final String goldAMexApply="//*[@id=\"Personal\"]/section[4]/div[2]/div/div[1]/div/a";
+
+    //Click Signup
+    public static final String signUp="//a[@class='sign-up btn btn-link']";
+    public static final String signUpFirstName="//*[@id=\"basicInfoFirstName\"]";
+    public static final String signUpLastName="//*[@id=\"basicInfoLastName\"]";
+    public static final String clickGender="//span[@id='basicInfoGender-button']//span[@class='ui-icon ui-icon-triangle-1-s']";
+    public static final String clickMale="//*[@id=\"ui-id-67\"]";
+    public static final String clickMonth="//*[@id=\"basicInfoMob-button\"]/span[1]";
+    public static final String clickMarch="/html[1]/body[1]/div[8]/ul[1]/li[4]";
+    public static final String clickDayOfBirthButton="//*[@id=\"basicInfoDob-button\"]/span[1]";
+    public static final String clickBirthDay="/html[1]/body[1]/div[9]/ul[1]/li[24]";
+    public static final String clickYearButton="//*[@id=\"basicInfoYob-button\"]/span[1]";
+    public static final String clickYearDate="/html[1]/body[1]/div[10]/ul[1]/li[27]";
+    public static final String clickAddressTypeButton="//*[@id=\"aType-1-button\"]/span[1]";
+    public static final String clickAddressType="/html[1]/body[1]/div[12]/ul[1]/li[2]";
+    public static final String enterAddress="//*[@id=\"addr1-1\"]";
+    public static final String enterCity="//*[@id=\"cityCountyWard-1\"]";
+    public static final String clickStateButton="//span[@id='stateProv-1-button']//span[@class='ui-icon ui-icon-triangle-1-s']";
+    public static final String clickState="/html[1]/body[1]/div[13]/ul[1]/li[41]";
+    public static final String enterPostalCode="//*[@id=\"postal-1\"]";
+
 }
