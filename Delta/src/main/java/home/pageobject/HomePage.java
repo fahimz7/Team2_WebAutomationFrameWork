@@ -3,6 +3,7 @@ package home.pageobject;
 import common.WebAPI;
 import home.webelement.WebElementHomePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -118,6 +119,22 @@ public class HomePage extends WebElementHomePage {
     @FindBy(how = How.XPATH,using = WebElementHomePage.blueAmexRatesAndFees)
     public static WebElement clickBlueAmexRateAndFees;
 
+    @FindBy(how = How.XPATH, using = WebElementHomePage.applyNowBlueAmex)
+    public static WebElement clickApplyNowBlueAmex;
+
+    @FindBy(how = How.XPATH, using = WebElementHomePage.enterFirstName)
+    public static WebElement writeFirstName;
+
+    @FindBy(how = How.XPATH,using = WebElementHomePage.enterLastName)
+    public static WebElement writeLastName;
+
+    @FindBy(how = How.XPATH,using = WebElementHomePage.ExploreMore)
+    public static WebElement clickExploreMore;
+
+    @FindBy(how = How.XPATH,using = WebElementHomePage.goldAMexApply)
+    public static WebElement clickGoldAmexApply;
+
+
     public static WebElement getClickDeltaSearchButton(){return clickDeltaSearchButton;}
     public static WebElement getTypeDeltaSearchBox(){return typeDeltaSearchBox;}
     public static WebElement getClickSkyMilesCreditCard(){return clickSkyMilesCreditCard;}
@@ -126,6 +143,13 @@ public class HomePage extends WebElementHomePage {
     public static WebElement getClickPersonalCards(){return  clickPersonalCards;}
     public static WebElement getClickBlueAmexCard(){return clickBlueAmexCard;}
     public static WebElement getClickBlueAmexRateAndFees(){return clickBlueAmexRateAndFees;}
+    public static WebElement getClickApplyNowBlueAmex(){return clickApplyNowBlueAmex;}
+    public static WebElement getWriteFirstName(){return writeFirstName;}
+    public static WebElement getWriteLastName(){return writeLastName;}
+    public static WebElement getEmploreMore(){return clickExploreMore;}
+    public static WebElement getClickGoldAmexApply(){return clickGoldAmexApply;}
+
+
 
     public static void doSearchCreditCards() throws InterruptedException{
         getClickDeltaSearchButton().click();
@@ -146,6 +170,18 @@ public class HomePage extends WebElementHomePage {
         Thread.sleep(3000);
         getClickBlueAmexRateAndFees().click();
         Thread.sleep(3000);
+        driver.navigate().back();
+        getClickApplyNowBlueAmex().click();
+        Thread.sleep(3000);
+        getWriteFirstName().sendKeys("Fahim");
+        Thread.sleep(3000);
+        getWriteLastName().sendKeys("Zaman");
+        driver.navigate().to("https://www.delta.com");
+        Thread.sleep(3000);
+        scrollUpDown(500);
+        getEmploreMore().click();
+        Thread.sleep(3000);
+        driver.quit();
 
     }
 

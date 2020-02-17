@@ -581,6 +581,10 @@ public class    WebAPI {
         webElement.sendKeys(value + Keys.ENTER);
 
     }
+    public static void scrollUpDown(int scroll){
+        JavascriptExecutor Scroll = (JavascriptExecutor) driver;
+        Scroll.executeScript("window.scrollBy(0,"+scroll+")");
+    }
 
     public void clearInputBox(WebElement webElement) {
         webElement.clear();
