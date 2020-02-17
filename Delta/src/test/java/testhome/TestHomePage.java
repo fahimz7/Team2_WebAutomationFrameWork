@@ -85,7 +85,12 @@ public class TestHomePage extends HomePage{
         sleepFor(3);
         xPathSendKey(enterPostalCode,"10029");
         sleepFor(2);
-
+        xPathSendKey(enterAreaCode,"718");
+        xPathSendKey(enterPhoneNumber,"523-3747");
+        sleepFor(3);
+        xPathSendKey(enterEmail,"fzaman@gmail.com");
+        xPathSendKey(confirmEmail,"fzaman@gmail.com");
+        sleepFor(3);
         }
 
 }

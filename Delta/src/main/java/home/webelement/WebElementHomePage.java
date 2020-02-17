@@ -59,5 +59,9 @@ public class WebElementHomePage extends WebAPI {
     public static final String clickStateButton="//span[@id='stateProv-1-button']//span[@class='ui-icon ui-icon-triangle-1-s']";
     public static final String clickState="/html[1]/body[1]/div[13]/ul[1]/li[41]";
     public static final String enterPostalCode="//*[@id=\"postal-1\"]";
+    public static final String enterAreaCode="//*[@id=\"requiredAreacode\"]";
+    public static final String enterPhoneNumber="//*[@id=\"requiredPhoneNumber\"]";
+    public static final String enterEmail="//*[@id=\"basicInfoEmailAddress\"]";
+    public static final String confirmEmail="//*[@id=\"requiredEmail2\"]";
 
 }
