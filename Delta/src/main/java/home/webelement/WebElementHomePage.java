@@ -31,4 +31,11 @@ public class WebElementHomePage extends WebAPI {
     public static final String personalCards="//*[@id=\"collapseInner4\"]/div/ul/li[2]/a";
     public static final String blueAmexCard="//a[contains(text(),'Delta SkyMiles Blue American Express Card')]";
     public static final String blueAmexRatesAndFees="//*[@id=\"maincontent\"]/div[6]/div/div/div/div[1]/div/div/div/div/div[4]/div/a";
+    public static final String applyNowBlueAmex="//*[@id=\"maincontent\"]/div[6]/div/div/div/div[3]/div/div[2]/span/a";
+    public static final String enterFirstName="//*[@id=\"first-name-52\"]";
+    public static final String enterLastName="//input[@id='last-name-56']";
+
+    //Explore more option from homepage
+    public static final String ExploreMore="//*[@id=\"homepage:banner-promoquilt\"]/div/div[4]/div/div/div/div/div/div/a";
+    public static final String goldAMexApply="//*[@id=\"Personal\"]/section[4]/div[2]/div/div[1]/div/a";
 }
