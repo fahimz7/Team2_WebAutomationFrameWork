@@ -579,6 +579,12 @@ public class WebAPI {
         JavascriptExecutor Scroll = (JavascriptExecutor) driver;
         Scroll.executeScript("window.scrollBy(0,"+scroll+")");
     }
+    public void xPathClick (String locator){
+        driver.findElement(By.xpath(locator)).click();
+    }
+    public void xPathSendKey(String locator, String value){
+        driver.findElement(By.xpath(locator)).sendKeys(value);
+    }
 
     public void clearInputBox(WebElement webElement) {
         webElement.clear();
