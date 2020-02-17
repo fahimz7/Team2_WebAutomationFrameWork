@@ -153,6 +153,13 @@ public class HomePage extends WebElementHomePage {
         return SelectAllVehical;
     }
 
+    @FindBy(how = How.XPATH, using = xPathSelectAllVehicles)
+    public static WebElement selectAllVehicles;
+
+    public static WebElement getSelectAllVehicles(){
+        return selectAllVehicles;
+    }
+
 
 
     @FindBy(how = How.XPATH, using = xPathAutoTabAllVehiclesCarInsurance)
@@ -898,11 +905,11 @@ public class HomePage extends WebElementHomePage {
         return footerSmallBusinessPlayBook;
     }
 
-    @FindBy(how = How.XPATH, using = xPathFooterExtraMile)
-    public static WebElement footerExtraMile;
-
-    public static WebElement getFooterExtraMile(){
-        return footerExtraMile;
-    }
+//    @FindBy(how = How.XPATH, using = xPathFooterExtraMile)
+//    public static WebElement footerExtraMile;
+//
+//    public static WebElement getFooterExtraMile(){
+//        return footerExtraMile;
+//    }
 }
 
