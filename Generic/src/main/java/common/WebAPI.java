@@ -127,7 +127,7 @@ public class    WebAPI {
 
     public WebDriver getLocalDriver(   @Optional("mac")    String OS, String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
-            if (OS.equalsIgnoreCase("OS X")) {
+            if (OS.equalsIgnoreCase("mac")) {
                 System.setProperty("webdriver.chrome.driver", "/Users/sanuwar/Team2_WebAutomationFrameWork/Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
@@ -184,22 +184,26 @@ public class    WebAPI {
         driver.quit();
     }
 
-    //helper methods
-    public void clickOnElement(String locator) {
-        try {
-            driver.findElement(By.cssSelector(locator)).click();
-        } catch (Exception ex) {
-            try {
-                driver.findElement(By.className(locator)).click();
-            } catch (Exception ex2) {
-                try {
-                    driver.findElement(By.id(locator)).click();
-                } catch (Exception ex3) {
-                    driver.findElement(By.xpath(locator)).click();
-                }
-            }
-        }
+    public void clickOnElement(String locator){
+        driver.findElement(By.xpath(locator)).click();
     }
+
+    //helper methods
+//    public void clickOnElement(String locator) {
+//        try {
+//            driver.findElement(By.xpath(locator)).click();
+//        } catch (Exception ex) {
+//            try {
+//                driver.findElement(By.className(locator)).click();
+//            } catch (Exception ex2) {
+//                try {
+//                    driver.findElement(By.id(locator)).click();
+//                } catch (Exception ex3) {
+//                    driver.findElement(By.cssSelector(locator)).click();
+//                }
+//            }
+//        }
+//    }
 
     public void typeOnElement(String locator, String value) {
         try {

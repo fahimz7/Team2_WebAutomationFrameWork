@@ -16,6 +16,7 @@ public class WebElementHomePage extends WebAPI {
     public static final String xPathselectCarInsurance = "//ul[@class='nav navbar-nav']//li[1]//ul[1]//li[1]//a[1]";
     public static final String xPathSelectClassicCarInsurance = "/html[1]/body[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[1]/ul[1]/li[2]/a[1]";
     public static final String linkTextSelectAllVehical= "All Vehicles";
+    public static final String xPathSelectAllVehicles = "//a[contains(text(),'All Vehicles')]";
 
 
     public static final String xPathMouseHoverHomeTab = "/html[1]/body[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[2]";
@@ -31,6 +32,7 @@ public class WebElementHomePage extends WebAPI {
     public static final String xPathSelectGeneralLiabilityInsurance= "//a[contains(text(),'General Liability Insurance')]";
     public static final String xPathSelectWorkersCompensationInsurance= "//a[contains(text(),\"Workers' Compensation Insurance\")]";
     public static final String xPathSelectAllBusinessCoveragesInsurance= "//a[contains(text(),'All Business Coverages')]";
+    public static final String xPathSelectAllIndustries = "//a[contains(text(),'All Industries')]";
 
     public static final String xPathMouseHoverEmployeeBenefitsTab = "/html[1]/body[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[4]/a[1]";
     public static final String xPathSelectEmployeeBenefits= "//ul[@class='dropdown-menu']//a[contains(text(),'Employee Benefits')]";
@@ -38,7 +40,7 @@ public class WebElementHomePage extends WebAPI {
     public static final String xPathSelectAbsenceManagement = "//a[contains(text(),'Absence Management')]";
     public static final String xPathSelectForEmployees = "//a[contains(text(),'For Employees')]";
 
-    public static final String xPathMouseHoverAboutUsTab = "/html[1]/body[1]/header[1]/nav[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[5]/a[1]";
+    public static final String xPathMouseHoverAboutUsTab = "//span[contains(text(),'About Us')]";
     public static final String xPathSelectAboutTheHartford = "//a[contains(text(),'About The Hartford')]";
     public static final String xPathSelectInvestorRelations = "//ul[@class='dropdown-menu']//a[contains(text(),'Investor Relations')]";
     public static final String xPathSelectNewsRoom = "//ul[@class='dropdown-menu']//a[contains(text(),'Newsroom')]";
@@ -84,7 +86,7 @@ public class WebElementHomePage extends WebAPI {
 
     public static final String xPathCareerImageHomePage = "//article[@class='cw-story-right story-animation']//img[@class='img-lazy media-object']";
 
-    public static final String xPathClaimTabPersonalAuto = "//a[contains(text(),'Personal Auto')]";
+    public static final String xPathClaimTabPersonalAuto = "/html[1]/body[1]/main[1]/div[2]/div[1]/section[1]/div[1]/div[1]/article[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]/a[1]";
 
     public static final String xPathClaimTabHomeAndRenters = "//a[contains(text(),'Home & Renters')]";
 
